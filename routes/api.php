@@ -17,3 +17,6 @@ return ["name"=>"Saurabh", "Age"=> 18];
 Route::get('students', [StudentController::class, 'list']);
 Route::post('add-student', [StudentController::class, 'addStudent']);
 Route::put('update-student',[StudentController::class, 'updateStudent']);
+Route::delete('delete-student/{id}', [StudentController::class, 'delStudent']);
+
+Route::get('search-student/{name}', [StudentController::class, 'searchStd']);
